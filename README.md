@@ -1,4 +1,4 @@
-# 力场日报-基于Lichang OpenAPI开发的资讯精选小程序
+# 力场日报-基于Lichang OpenAPI开发的文章精选小程序
 
 力场公链挖矿第一社区，一个以公链共建挖矿为核心的生态社区及UGC平台。
 Lichang Lab 是力场为开发者提供的开发平台。开发者可以使用公开接口，基于力场数据开发自己的应用。
@@ -9,9 +9,11 @@ Lichang Lab 是力场为开发者提供的开发平台。开发者可以使用�
 * 离线下载功能，及时缓存近期的 30 篇文章
 * 更多贴心小细节：多图及长文预警；支持一键分享收藏；夜间模式
 
+![](./preview.png "预览图")
+
 ## OpenAPI对接
-Lichang Lab OpenAPI的接口文档：https://lab.lichang.io/docs/，使用api需要先申请token，在header中通过指定Authorization字段来通过验证。
-该文档可以直接测试使用，请在Authorize里面设置api token。
+Lichang Lab OpenAPI的接口文档：https://lab.lichang.io/docs/ ，使用api需要先申请token，在header中通过指定Authorization字段来通过验证。
+该文档可以直接测试使用，需要在Authorize设置api token。
 ### 小程序请求授权：
 ```javascript
 /**
@@ -103,6 +105,9 @@ function getCricleArticles(id) {
 
 ```
 
-更多实现请参考源码：https://github.com/supercaimin/LichangDaliy.git
+## 总结
+由于Lichang Lab刚刚发布，只提供了最初级的查询功能，小程序功能比较简单；文章详细接口content字段未返还文章内容导致小程序目前无法查看内容。
+随着API的逐步开放，新功能不断增加，Lichang Lab会让力场成为一个更开放和更多可能性的平台，力场的生态会更精彩、更好玩、更繁荣。
 
-## 总结与建议
+
+源码地址：https://github.com/supercaimin/LichangDaliy.git
